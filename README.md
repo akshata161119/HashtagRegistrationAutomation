@@ -12,3 +12,5 @@ Automated scripts for Hashtag registration page.
 - Run src/test/resources/testng.xml file to execute all tests.
 
 - Test proof is attached in TestProof.png
+
+  ![image](https://github.com/akshata161119/HashtagRegistrationAutomation/assets/55494682/4c27afa7-0a4a-401c-815f-7becd3da229f)
