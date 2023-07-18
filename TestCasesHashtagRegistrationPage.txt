@@ -1,0 +1,108 @@
+Functionality Testcases.
+
+1. Scenario: To verify name field is accepting user's Full Name.
+   Given: Company hashtag is accepting job applications. 
+   When: User enters full name  'Test User'  in Name field.
+   Then: Application should allow user to enter Full Name.
+
+
+2. Scenario:To verify Email field is accepting users Email ID.
+   Given: User has valid Email ID.
+   When: User enters Email ID  'testuser@gmail.com' in Email field.
+   Then: Application should allow to enter user  Email ID.
+
+
+3. Scenario: To verify Phone field is accepting users 10 digit Phone Number with ISD code.
+   Given: User has valid Phone Number with  valid ISD code.
+   When: User Enters Phone Number with ISD code '(+91)7689568923' in Phone field.
+   Then: Application should allow user to Enter Phone Number.
+
+
+4. Scenario: To verify Resume field is accepting users file.
+   Given: User have a Resume with pdf or docx format and size less than 5MB.
+   When: User attach file.
+   Then: Application should allow to upload the Resume successfully.
+
+
+5. Scenario: To verify Description field is accepting user details.
+   Given: Company hashtag is accepting job applications.
+   When: User enters the Description.
+   Then: Application should allow user to Enter details.
+
+
+6. Scenario: To verify user is able to submit job application.
+   Given: User has filed name,phone,email,description,resume in respective fields.
+   When: User clicks on apply now button.
+   Then: Application submitted confirmation message should display field.
+
+
+7. Scenario: To verify multiple tabs are redirecting to correct urls.
+   Given: The page is loaded correctly.
+   When: User clicks on the tabs Services,Shopify,Blog,Careers,Case Studies,About Us,Contact US.
+   Then: Application should redirect URLs correctly.
+
+
+8. Scenario: To verify multiple footer  links  are redirecting to correct urls.
+   Given: The page is loaded correctly.
+   When: User clicks on the footer links. 
+   Then: Application should redirect URLs correctly.
+   
+
+9. Scenario:  To verify error handling of size and file type for resume.
+   Given: User has  unsupported format and larger than 5mb  Resume.
+   When: User  uploads the file.
+   Then: Application should display error message.
+
+
+10. Scenario: To verify format of email.
+    Given: User has invalid  Email ID.
+    When: User writes  invalid  Email ID.
+    Then: Application should  display error message. 
+
+
+11. Scenario: To verify format of 10 digit number and ISD code for Phone number.
+    Given: User has invalid Phone number.
+    When: User writes invalid Phone number.
+    Then: Application should  display error message.
+
+
+12. Scenario: To verify submit user details in empty format.
+    Given: All fields are empty on the form.
+    When: User submit empty fields.
+    Then: Application should  display appropriate message.
+	
+13. Scenario: To verify user is able to submit the job application in different browsers.
+    Given: User submit the application on Chrome, Edge, Firefox
+    When: user submit  the job application.
+    Then: Application should submit.
+
+UI Testcases.
+
+
+1. Scenario: To verify application is redirecting to homepage. 
+   Given: The page is loaded correctly.
+   When: User clicks on the hashtag logo.
+   Then: URL should redirect to the homepage.
+
+
+2. Scenario: To verify application screen in different resoulation.
+    Given: User opens the application link on computer,tab,mobile.
+    When: User opens application in screen.
+    Then: Application should not overlap with fields and images.
+	
+3. Scenario: To verify user is able to expand description input field.
+    Given: The page is loaded correctly.
+    When: User enter long text description in description field.
+    Then: User should be able to expand description input field.
+	
+4. Scenario: To verify error related messages are displayed in red color.
+    Given: The page is loaded correctly.
+    When: User enters performs incorrect actions.
+    Then: Error related messages should be displayed in red color.
+	
+
+
+
+
+
+
